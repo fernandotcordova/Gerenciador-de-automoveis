@@ -3,7 +3,7 @@
 <img src = "https://github.com/fernandotcordova/Gerenciador-de-automoveis/blob/main/imagens-aplicacao/tela-principal.png" alt = "Imagem da página principal da aplicação">
 
 ## Informações importantes
-- Esse projeto não tem nenhuma intenção de venda ou algo similar, mas sim de intenção acadêmica;
+- Parte dos códigos construídos nesse projeto é de autoria do professor Roger Machado (professor do Instituto Federal) e de Gustavo Guanabara -- autor do código CSS construído nessa aplicação e disponibilizado no GitHub;
 - Além dos autores citados anteriormente, esse projeto é de autoria de Luiz Fernando Turela Cordova, sob licença de MIT.
 - Esse projeto não tem intenção de venda ou algo similar, mas sim de intenção acadêmica.
 - Fico agradecido a todos que se disponham a deixar comentários construtivos ao meu projeto!
