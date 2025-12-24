@@ -1,15 +1,15 @@
-# Sistema de gerenciamento de automóveis
+# 👨‍💻 Sistema de gerenciamento de automóveis
 
 <img src = "https://github.com/fernandotcordova/Gerenciador-de-automoveis/blob/main/imagens-aplicacao/tela-principal.png" alt = "Imagem da página principal da aplicação">
 
-## Informações importantes
+## ⚠️ Informações importantes
 - Parte dos códigos construídos nesse projeto é de autoria do professor Roger Machado (professor do Instituto Federal) e de Gustavo Guanabara -- autor do código CSS construído nessa aplicação e disponibilizado no GitHub;
 - Além dos autores citados anteriormente, esse projeto é de autoria de Luiz Fernando Turela Cordova, sob licença de MIT.
 - Esse projeto não tem intenção de venda ou algo similar, mas sim de intenção acadêmica.
 - Fico agradecido a todos que se disponham a deixar comentários construtivos ao meu projeto!
 - **Os arquivos são divididos em interfaces e ações. Os arquivos com prefixo ou sufixo ação realizam alguma modificação no banco de dados ou no próprio página PHP.**
 
-## Como posso rodar esse projeto?
+## 🎬 Como posso rodar esse projeto?
 1. Para rodar esse projeto é necessário algum tipo de AMP (Apache, MySQL, PHP) em sua máquina ou, caso prefira, a própria máquina virtual do PHP. Obs.: Recomendo o uso do XAMPP, ele está disponível para todos os sistemas operacionais! É com ele que prosseguiremos o passo-a-passo. O XAMPP está disponível em: [Download XAMPP](https://www.apachefriends.org/pt_br/index.html);
 2. Depois de instalar o XAMPP, entre e ative o servidor Apache e o MySQL;
 3. Acesso o SGBD (Sistema Gerenciador de Banco de dados) do XAMPP (o PHPMyAdmin) e importe o arquivo "cadastro.sql";
@@ -18,7 +18,7 @@
 6. Acesse no navegador: localhost/nome_pasta_projeto;
 7. Pronto! Agora é so testar a aplicação e ser feliz 😄
 
-## Como os arquivos são organizados
+## 🗄️ Como os arquivos são organizados
 - pastas upload e upload-carro
   * Armazenam as fotos submetidas pelo usuário. Enquanto upload armazena a foto do perfil do usuário a upload-carro armazena as dos carros cadastrados
 
@@ -79,5 +79,5 @@
 - remover-carro.php
   * Tela de remoção de carros do sistema
 
-## O que foi aprendido através desse projeto
+## 🧠 O que foi aprendido através desse projeto
 - Além de aprofundar conceitos das linguagens mais usadas na web, pude desenvolve ainda mais a lógica de programação e o domínio de instruções SQL. Foi,também, foi uma experiência extremamente construtiva no uso de ambientes AMPs e na configuração da máquina virtual do PHP. 
