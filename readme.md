@@ -1,6 +1,7 @@
 # 👨‍💻 Sistema de gerenciamento de automóveis
 
 <img src = "https://github.com/fernandotcordova/Gerenciador-de-automoveis/blob/main/imagens-aplicacao/tela-principal.png" alt = "Imagem da página principal da aplicação">
+<p>ESSE É UM SISTEMA TOTALMENTE AMADOR, NÃO DEVE SER LEVADO, EM HIPÓTESE NENHUMA, A AMBIENTES PRODUTIVOS</p>
 
 ## ⚠️ Informações importantes
 - Parte dos códigos construídos nesse projeto é de autoria do professor Roger Machado (professor do Instituto Federal) e de Gustavo Guanabara -- autor do código CSS construído nessa aplicação e disponibilizado no GitHub;
