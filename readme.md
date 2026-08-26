@@ -1,84 +1,103 @@
-# 👨‍💻 Sistema de gerenciamento de automóveis
+# 👨‍💻 Sistema de Gerenciamento de Automóveis
 
-<img src = "https://github.com/fernandotcordova/Gerenciador-de-automoveis/blob/main/imagens-aplicacao/tela-principal.png" alt = "Imagem da página principal da aplicação">
-<p>ESSE É UM SISTEMA TOTALMENTE AMADOR, NÃO DEVE SER LEVADO, EM HIPÓTESE NENHUMA, A AMBIENTES PRODUTIVOS</p>
+<p align="center">
+  <img src="https://github.com/fernandotcordova/Gerenciador-automoveis/blob/main/imagens-aplicacao/tela-principal.png?raw=true" alt="Imagem da página principal da aplicação" width="100%">
+</p>
 
-## ⚠️ Informações importantes
-- Parte dos códigos construídos nesse projeto é de autoria do professor Roger Machado (professor do Instituto Federal) e de Gustavo Guanabara -- autor do código CSS construído nessa aplicação e disponibilizado no GitHub;
-- Além dos autores citados anteriormente, esse projeto é de autoria de Luiz Fernando Turela Cordova, sob licença de MIT.
-- Esse projeto não tem intenção de venda ou algo similar, mas sim de intenção acadêmica.
-- Fico agradecido a todos que se disponham a deixar comentários construtivos ao meu projeto!
-- **Os arquivos são divididos em interfaces e ações. Os arquivos com prefixo ou sufixo ação realizam alguma modificação no banco de dados ou no próprio página PHP.**
+> ⚠️ **AVISO IMPORTANTE:** Este é um sistema estritamente acadêmico e amador. **Não deve ser utilizado em ambientes de produção sob nenhuma hipótese.**
 
-## 🎬 Como posso rodar esse projeto?
-1. Para rodar esse projeto é necessário algum tipo de AMP (Apache, MySQL, PHP) em sua máquina ou, caso prefira, a própria máquina virtual do PHP. Obs.: Recomendo o uso do XAMPP, ele está disponível para todos os sistemas operacionais! É com ele que prosseguiremos o passo-a-passo. O XAMPP está disponível em: [Download XAMPP](https://www.apachefriends.org/pt_br/index.html);
-2. Depois de instalar o XAMPP, entre e ative o servidor Apache e o MySQL;
-3. Acesso o SGBD (Sistema Gerenciador de Banco de dados) do XAMPP (o PHPMyAdmin) e importe o arquivo "cadastro.sql";
-4. Renomeio o arquivo "conecta_exemplo.php" para "conecta.php";
-5. Mova todos os arquivos da aplicação para pasta htdocs (variando em cada sistema). No Windows (caso você não tenha mudado) está em: C:\xampp\htdocs; no Linux: /opt/lampp/htdocs; no MacOS: /Applications/XAMPP/xamppfiles/htdocs. Crie uma pasta antes de mover os arquivos. Aviso: Caso sua máquina rode uma distribuição Linux você deverá mudar a permissão das pastas upload e upload-carro; Sobre isso, esse [tutorial](www.hostinger.com/br/tutoriais/como-alterar-permissoes-e-proprietarios-via-linha-de-comando) pode ajudar!
-6. Acesse no navegador: localhost/nome_pasta_projeto;
-7. Pronto! Agora é so testar a aplicação e ser feliz 😄
+---
 
-## 🗄️ Como os arquivos são organizados
-- pastas upload e upload-carro
-  * Armazenam as fotos submetidas pelo usuário. Enquanto upload armazena a foto do perfil do usuário a upload-carro armazena as dos carros cadastrados
+## 📌 Sobre o Projeto
+Este projeto foi desenvolvido com objetivos puramente acadêmicos para consolidar conceitos de desenvolvimento web, lógica de programação e manipulação de bancos de dados relacionais.
 
-- index.php
-  * Página principal, que irá realizar a listagem dos carros e apresentar os às ações relacionadas ao usuário (recuperar senha, perfil etc)
+### 👥 Créditos e Autoria
+* **Desenvolvedor Principal:** Luiz Fernando Turela Cordova (sob licença MIT).
+* **Colaborações Acadêmicas:** Parte da lógica de backend foi baseada nos ensinamentos do professor Roger Machado (Instituto Federal).
+* **Estilização (CSS):** Interface visual adaptada a partir dos layouts disponibilizados por Gustavo Guanabara.
 
-- acoes-carros.php
-  * Fazem modificações relacionadas aos carros dos cadastradas pelo usuário. Não é uma tela e sim um modificar do banco de dados
 
-- acoes-entrar
-  * Script que controla a entrada de usuários no sistema
 
-- acoes-recuperar
-  * Script que faz a recuperação da senha do usuário
+## 🛠️ Tecnologias Utilizadas
+* **PHP** (Lógica de servidor e ambiente backend)
+* **MySQL / MariaDB** (Armazenamento de dados)
+* **HTML5 & CSS3** (Estruturação e design responsivo)
+* **XAMPP** (Ambiente local de desenvolvimento)
 
-- acoes.php
-  * Cria novos usuário no sistema
+## 🎬 Como Executar o Projeto Localmente
 
-- adicionar-carro.php
-  * Tela de formulário de adicionar carros ao banco de dados
+Para rodar esta aplicação, você precisará de um ambiente de servidor local Apache, MySQL e PHP (Stack AMP). Recomenda-se o uso do **XAMPP**.
 
-- cadastro.php
-  * Tela de formulário para cadastro de novos usuários
+### Passo 1: Preparar o Ambiente
+1. Baixe e instale o [XAMPP](https://www.apachefriends.org/pt_br/index.html) para o seu sistema operacional.
+2. Abra o painel de controle do XAMPP e **o servidor Apache e o banco de dados MySQL**.
 
-- cadastro.sql
-  * Banco de dados MariaDB, criado pelo PHPMyAdmin
+### Passo 2: Configurar o Banco de Dados
+1. Acesse o gerenciador de banco de dados no seu navegador através do link: `http://localhost/phpmyadmin/`.
+2. Crie um novo banco de dados e **importe o arquivo `cadastro.sql`** incluído neste repositório.
 
-- conecta.php
-  * Arquivo que estabelece a conexão com o banco de dados
+### Passo 3: Configurar as Credenciais
+1. Na pasta raiz do projeto, localize o arquivo `conecta_exemplo.php`.
+2. Renomeie o arquivo exatamente para **`conecta.php`**.
+3. Se necessário, abra-o e ajuste os dados de conexão (usuário, senha e nome do banco) conforme as configurações do seu MySQL local.
 
-- editar-acoes.php
-  * Fazem a edição de carros cadastrados no sistema
+### Passo 4: Mover os Arquivos para o Servidor Local
+Crie uma pasta para o projeto (ex: `gerenciador-carros`) dentro do diretório de documentos públicos do XAMPP, dependendo do seu sistema:
 
-- editar-carro.php
-  * Tela de formulário de edição dos carros cadastrados no banco de dados
+* 🪟 **Windows:** `C:\xampp\htdocs\gerenciador-carros`
+* 🐧 **Linux:** `/opt/lampp/htdocs/gerenciador-carros`
+* 🍏 **macOS:** `/Applications/XAMPP/xamppfiles/htdocs/gerenciador-carros`
 
-- login-cadastro.php
-  * Página de login ou cadastro, conforme o usuário escolher
+> 🛑 **Aviso para usuários Linux:** Se você encontrar falhas no upload de fotos, ajuste as permissões de escrita das pastas `upload` e `upload-carro` usando o comando:
+> ```bash
+> sudo chmod -R 775 upload upload-carro
+> ```
+> Para mais detalhes sobre gerenciamento de permissões, consulte o [Tutorial de chmod da Hostinger](https://www.hostinger.com.br/tutoriais/como-alterar-permissoes-e-propriedades-no-linux).
 
-- login.php
-  * Tela de formulário de login de usuário
+### Passo 5: Acessar a Aplicação
+Abra o seu navegador de preferência e digite o endereço correspondente ao nome da pasta criada:
+```text
+http://localhost/gerenciador-carros
+```
 
-- logout.php
-  * Script para fazer a saída de usuários
 
-- menu.php
-  * Script para realizar a construção de um menu responsivo
+## 🗄️ Estrutura de Arquivos
 
-- perfil.php
-  * Mostra informações relacionadas ao perifl, como nome, e-mail e recuperação de senha
+A arquitetura do projeto diferencia claramente arquivos de **Interface (Telas)** e arquivos de **Ação (Scripts/Controladores)**:
 
-- principal.php
-  * Mostra um formulário de recuperação de senha
+### 📂 Diretórios
+* `upload/` — Armazena as fotos de perfil dos usuários.
+* `upload-carro/` — Armazena as imagens dos veículos cadastrados.
 
-- remover-acoes.php
-  * Remoção de carros do sistema, não é uma tela e sim um controlador
+### 📄 Telas (Visualização e Formulários)
+* `index.php` — Página principal contendo a listagem de carros e o menu de opções do usuário.
+* `login.php` / `login-cadastro.php` — Interfaces para autenticação e triagem de usuários.
+* `cadastro.php` — Formulário de registro de novos perfis.
+* `perfil.php` — Painel de informações do usuário logado.
+* `adicionar-carro.php` — Formulário para cadastrar novos veículos.
+* `editar-carro.php` — Formulário para modificação de dados de carros existentes.
+* `remover-carro.php` — Tela de confirmação para exclusão de veículos.
+* `principal.php` — Interface dedicada à recuperação de senhas.
+* `menu.php` — Componente estrutural do menu de navegação responsivo.
 
-- remover-carro.php
-  * Tela de remoção de carros do sistema
+### ⚙️ Controladores e Configurações (Scripts de Ação)
+* `conecta.php` — Configuração da conexão com a base de dados via PHP.
+* `cadastro.sql` — Estrutura de tabelas exportada do MariaDB/MySQL.
+* `acoes.php` — Script responsável pelo processamento do cadastro de novos usuários.
+* `acoes-entrar.php` — Processa a validação de login e início da sessão.
+* `acoes-recuperar.php` — Lógica de tratamento de recuperação de acessos.
+* `acoes-carros.php` — Executa inserções e regras de negócio para os automóveis.
+* `editar-acoes.php` — Processa as atualizações de dados de veículos no banco.
+* `remover-acoes.php` — Realiza a exclusão física/lógica de registros do banco de dados.
+* `logout.php` — Destrói a sessão ativa e desloga o usuário de forma segura.
 
-## 🧠 O que foi aprendido através desse projeto
-- Além de aprofundar conceitos das linguagens mais usadas na web, pude desenvolve ainda mais a lógica de programação e o domínio de instruções SQL. Foi,também, foi uma experiência extremamente construtiva no uso de ambientes AMPs e na configuração da máquina virtual do PHP. 
+
+## 🧠 Aprendizados Obtidos
+O desenvolvimento desta aplicação permitiu a fixação prática de competências cruciais em engenharia de software:
+* Estruturação de arquitetura monolítica organizada (Separação entre lógica e visualização).
+* Domínio em instruções e manipulação de bancos de dados relacionais (**SQL / CRUD**).
+* Tratamento de sessões, segurança básica de dados e gerenciamento de uploads no servidor local.
+* Configurações de ambientes de infraestrutura local através de ferramentas AMP.
+
+---
+💡 *Sugestões construtivas, relatos de bugs e feedbacks sempre serão muito bem-vindos através de Issues ou Pull Requests!*
